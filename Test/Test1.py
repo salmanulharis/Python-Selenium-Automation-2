@@ -13,8 +13,6 @@ driver.set_page_load_timeout(10)
 
 driver.get('https://www.google.co.in')
 driver.find_element(By.NAME,"q").send_keys("Avatar")
-# driver.find_element(By.NAME,"btnK").click() # normal way to click
-# driver.find_element(By.NAME,"btnK").send_keys(Keys.RETURN) # if normal click dont work because the element is not visisble
 button = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME,"btnK")))
 button.click()
 time.sleep(4)
