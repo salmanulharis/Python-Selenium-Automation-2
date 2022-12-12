@@ -17,6 +17,10 @@ button = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NA
 button.click()
 time.sleep(4)
 
+driver.maximize_window()
+time.sleep(3)
+driver.refresh()
+time.sleep(3)
 driver.quit()
 print("success")
 
