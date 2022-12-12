@@ -18,9 +18,7 @@ button.click()
 time.sleep(4)
 
 driver.maximize_window()
-time.sleep(3)
 driver.refresh()
-time.sleep(3)
 driver.quit()
 print("success")
 
