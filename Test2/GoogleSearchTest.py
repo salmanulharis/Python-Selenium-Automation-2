@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import unittest
+import HtmlTestRunner
 
 class GoogleSearch(unittest.TestCase):
 	#-> setUpClass, run only once before all the test methods
@@ -32,5 +33,5 @@ class GoogleSearch(unittest.TestCase):
 		print("Test completed")
 
 if __name__ == '__main__':
-	unittest.main()
+	unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))
 
