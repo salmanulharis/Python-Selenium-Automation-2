@@ -31,4 +31,6 @@ class GoogleSearch(unittest.TestCase):
 		cls.driver.quit()
 		print("Test completed")
 
+if __name__ == '__main__':
+	unittest.main()
 
