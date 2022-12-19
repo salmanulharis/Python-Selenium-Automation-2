@@ -8,6 +8,7 @@ class LoginPage():
 		self.username_textbox_name = "username"
 		self.password_textbox_name = "password"
 		self.login_button_class    = "orangehrm-login-button"
+		self.invalidUsername_message_class = "oxd-alert-content-text"
 
 	def enter_username(self, username): #actions
 		self.driver.find_element(By.NAME, self.username_textbox_name).clear()
@@ -19,3 +20,7 @@ class LoginPage():
 
 	def click_login(self): #actions
 		self.driver.find_element(By.CLASS_NAME, self.login_button_class).click()
+
+	def check_invalid_username_message(self, message):
+		msg = self.driver.find_element(By.CLASS_NAME, self.invalidUsername_message_class).text
+		return msg

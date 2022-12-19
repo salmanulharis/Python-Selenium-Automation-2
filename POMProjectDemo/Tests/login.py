@@ -40,4 +40,4 @@ class LoginTest(unittest.TestCase):
 		print("Test Complete");
 
 if __name__ == '__main__':
-	unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports/test_login_valid'))
+	unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='../reports'))
